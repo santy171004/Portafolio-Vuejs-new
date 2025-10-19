@@ -1,26 +1,49 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <AppHeader />
+    <main>
+      <div class="bloques-container">
+        <AppAbout id="sobremi" class="bloque reveal" />
+        <AppStudies id="estudios" class="bloque reveal" />
+      </div>
+      <div class="bloques-container">
+        <AppProjects id="proyectos" class="bloque reveal" />
+        <AppContact id="contacto" class="bloque reveal" />
+      </div>
+    </main>
+    <AppFooter />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import AppHeader from './components/AppHeader.vue';
+import AppAbout from './components/AppAbout.vue';
+import AppStudies from './components/AppStudies.vue';
+import AppProjects from './components/AppProjects.vue';
+import AppContact from './components/AppContact.vue';
+import AppFooter from './components/AppFooter.vue';
+import { onMounted } from 'vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+onMounted(() => {
+  function revealSections() {
+    const reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      }
+    }
   }
-}
+
+  document.title = 'Agustin Santarena - Portafolio';
+
+  window.addEventListener("scroll", revealSections);
+  revealSections();
+});
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
