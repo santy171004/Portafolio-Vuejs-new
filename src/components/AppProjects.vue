@@ -4,7 +4,7 @@
     <div class="projects-grid">
       <div class="project-card">
         <div class="project-image">
-          <img src="@/assets/PortafolioP.jpg" alt="Portafolio">
+          <img src="@/assets/portafolio.png" alt="Portafolio">
         </div>
         <h3>Portafolio web</h3>
         <p>Desarrollado con HTML, CSS y Vue.js</p>

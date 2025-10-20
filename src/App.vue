@@ -38,7 +38,7 @@ onMounted(() => {
     }
   }
 
-  document.title = 'Agustin Santarena - Portafolio';
+  document.title = 'Santiago Martin - Portafolio';
 
   window.addEventListener("scroll", revealSections);
   revealSections();

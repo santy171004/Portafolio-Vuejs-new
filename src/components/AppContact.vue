@@ -4,15 +4,15 @@
     <div class="contact-info">
       <div class="contact-item">
         <i class="fas fa-envelope"></i>
-        <p>santarenaagustin69@gmail.com</p>
+        <p>santinmartin773@gmail.com</p>
       </div>
       <div class="contact-item">
         <i class="fas fa-phone"></i>
-        <p>+54 260 4390104</p>
+        <p>+54 260 4602535</p>
       </div>
       <div class="contact-item">
         <i class="fab fa-github"></i>
-        <p>github.com/AgusSantarena</p>
+        <p>https://github.com/santy171004</p>
       </div>
     </div>
     <form class="contact-form" @submit.prevent="handleSubmit">

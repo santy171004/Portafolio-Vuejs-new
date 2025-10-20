@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>&copy; 2025 Agustin Santarena</p>
+    <p>&copy; 2025 Santiago Martin</p>
     <div class="social-links">
       <a href="#"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/AgusSantarena"><i class="fab fa-github"></i></a>

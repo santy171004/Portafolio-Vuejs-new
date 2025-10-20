@@ -4,10 +4,10 @@
       <div class="header-content">
         <div class="profile-info">
           <div class="profile-text">
-            <h1>Marcos Agustin Santarena Ramos</h1>
+            <h1>Santiago Nicolas Martin</h1>
           </div>
           <div class="profile-photo-frame">
-            <img src="@/assets/Perfil.jpg" alt="Foto de Marcos Santarena">
+            <img src="@/assets/perfil.jpg" alt="Foto de Marcos Santarena">
           </div>
         </div>
         <nav>
